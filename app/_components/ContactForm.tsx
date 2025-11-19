@@ -1,7 +1,5 @@
-// components/ContactForm.jsx
 "use client";
 
-import { useState } from "react";
 import { useFormValidation } from "../_hooks/useFormValidation";
 import { simulateContactSubmit } from "../_services/contactService";
 import { Mail, Phone, User, MessageSquare, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
@@ -149,7 +147,6 @@ export default function ContactForm() {
                     )}
 
                     <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-                        {/* Name and Email */}
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label htmlFor="name" className="block text-lg font-medium text-gray-700 mb-2">
@@ -220,7 +217,6 @@ export default function ContactForm() {
                             </div>
                         </div>
 
-                        {/* Phone and Area */}
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label htmlFor="phone" className="block text-lg font-medium text-gray-700 mb-2">
@@ -292,7 +288,6 @@ export default function ContactForm() {
                             </div>
                         </div>
 
-                        {/* Experience Level */}
                         <div>
                             <label htmlFor="experience" className="block text-lg font-medium text-gray-700 mb-2">
                                 Nível de Experiência com Tecnologia *
@@ -328,7 +323,6 @@ export default function ContactForm() {
                             )}
                         </div>
 
-                        {/* Message */}
                         <div>
                             <label htmlFor="message" className="block text-lg font-medium text-gray-700 mb-2">
                                 Mensagem *
@@ -364,7 +358,6 @@ export default function ContactForm() {
                             <p className="text-sm text-gray-500 mt-2">{formData.message.length}/500 caracteres</p>
                         </div>
 
-                        {/* Submit Button */}
                         <div className="pt-4">
                             <Button
                                 type="submit"
@@ -385,7 +378,6 @@ export default function ContactForm() {
                             </Button>
                         </div>
 
-                        {/* Help Text */}
                         <div className="text-center">
                             <p className="text-gray-500 text-sm">
                                 Ou entre em contato diretamente:{" "}

@@ -6,7 +6,7 @@ import { Menu } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-const imgLogo1 = "https://www.figma.com/api/mcp/asset/ac516521-8261-4a46-936b-71a45d89b03b";
+import logo from "./../../public/logo.png";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,22 +37,14 @@ export default function Header() {
                 className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
                 aria-label="Navegação principal"
             >
-                {/* Logo */}
                 <a
                     href="#inicio"
                     className="h-12 w-48 relative shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#7f05ea] transition-transform hover:scale-105 duration-200"
                     aria-label="ReComeçar 60+ - Voltar para o início"
                 >
-                    <Image
-                        src={imgLogo1}
-                        alt="Logo ReComeçar 60+"
-                        fill
-                        className="object-contain object-left"
-                        priority
-                    />
+                    <Image src={logo} alt="Logo ReComeçar 60+" fill className="object-contain object-left" priority />
                 </a>
 
-                {/* Desktop Navigation - Clean and Minimal */}
                 <nav className="hidden lg:flex items-center gap-8" aria-label="Navegação desktop">
                     {navItems.map((item) => (
                         <a
@@ -65,7 +57,6 @@ export default function Header() {
                     ))}
                 </nav>
 
-                {/* Desktop CTA Button */}
                 <div className="hidden lg:flex items-center">
                     <Button
                         className="px-8 py-3 rounded-xl text-lg font-semibold h-auto bg-gradient-to-r from-[#ff4589] to-[#7f05ea] hover:from-[#ff4589]/90 hover:to-[#7f05ea]/90 transition-all duration-300 shadow-md hover:shadow-lg"
@@ -75,7 +66,6 @@ export default function Header() {
                     </Button>
                 </div>
 
-                {/* Mobile Menu Trigger */}
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>
                     <SheetTrigger asChild className="lg:hidden">
                         <button
@@ -86,14 +76,12 @@ export default function Header() {
                         </button>
                     </SheetTrigger>
 
-                    {/* Mobile Menu Content - Clean Design */}
                     <SheetContent side="right" className="w-full sm:w-96 p-0 bg-white">
                         <div className="flex flex-col h-full">
-                            {/* Header with Logo */}
                             <div className="p-6 border-b border-gray-200">
                                 <div className="h-12 w-48 relative">
                                     <Image
-                                        src={imgLogo1}
+                                        src={logo}
                                         alt="Logo ReComeçar 60+"
                                         fill
                                         className="object-contain object-left"
@@ -101,7 +89,6 @@ export default function Header() {
                                 </div>
                             </div>
 
-                            {/* Navigation Links - Larger Touch Targets */}
                             <nav className="flex-1 p-6 space-y-2" aria-label="Menu mobile">
                                 {navItems.map((item) => (
                                     <button
@@ -114,7 +101,6 @@ export default function Header() {
                                 ))}
                             </nav>
 
-                            {/* CTA Button - Prominent in Mobile */}
                             <div className="p-6 border-t border-gray-200 bg-gray-50">
                                 <Button
                                     className="w-full px-6 py-4 rounded-xl text-xl font-semibold h-auto bg-gradient-to-r from-[#ff4589] to-[#7f05ea] hover:from-[#ff4589]/90 hover:to-[#7f05ea]/90 transition-all duration-300 shadow-md"

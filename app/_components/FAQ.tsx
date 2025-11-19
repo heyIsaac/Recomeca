@@ -56,7 +56,6 @@ export default function FAQ() {
             aria-labelledby="faq-title"
         >
             <div className="max-w-4xl mx-auto">
-                {/* Section Header */}
                 <div className="text-center mb-12 space-y-4">
                     <h2 id="faq-title" className="section-title">
                         Perguntas Frequentes
@@ -66,7 +65,6 @@ export default function FAQ() {
                     </p>
                 </div>
 
-                {/* FAQ Accordion */}
                 <div className="space-y-3" role="region" aria-label="Perguntas frequentes">
                     {faqItems.map((item) => (
                         <div
@@ -93,7 +91,6 @@ export default function FAQ() {
                                 />
                             </button>
 
-                            {/* Answer */}
                             {openId === item.id && (
                                 <div
                                     id={`answer-${item.id}`}
@@ -107,7 +104,6 @@ export default function FAQ() {
                     ))}
                 </div>
 
-                {/* Additional Support */}
                 <div className="mt-12 p-8 bg-gradient-to-br from-[#FF4589]/10 to-[#7F05EA]/10 rounded-lg text-center">
                     <p className="text-gray-700 mb-4">Ainda tem dúvidas? Nossa equipe está pronta para ajudar!</p>
                     <button className="btn-primary" aria-label="Entrar em contato com suporte">

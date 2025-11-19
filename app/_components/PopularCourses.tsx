@@ -13,7 +13,7 @@ const courses = [
         level: "Iniciante",
         students: 3200,
         description: "Entenda como IA está transformando o mercado de trabalho de forma simples e prática",
-        image: "/cursos/ia-automacao.jpg",
+        image: "/ai-course.avif",
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const courses = [
         level: "Intermediário",
         students: 2100,
         description: "Análise de dados para tomada de decisão estratégica com exemplos reais",
-        image: "/cursos/data-science.jpg",
+        image: "/data_science-course.avif",
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const courses = [
         level: "Iniciante",
         students: 2800,
         description: "Implante aplicações na nuvem com confiança e segurança",
-        image: "/cursos/cloud-computing.jpg",
+        image: "/cloud_comp-course.avif",
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ const courses = [
         level: "Intermediário",
         students: 4100,
         description: "Crie sites modernos com tecnologias atuais do mercado",
-        image: "/cursos/desenvolvimento-web.jpg",
+        image: "/web-course.avif",
     },
     {
         id: 5,
@@ -53,7 +53,7 @@ const courses = [
         level: "Iniciante",
         students: 1900,
         description: "Metodologias Scrum e Kanban na prática para gestão eficiente",
-        image: "/cursos/gestao-projetos.jpg",
+        image: "/project-course.avif",
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ const courses = [
         level: "Avançado",
         students: 1200,
         description: "Proteja sistemas e dados em ambiente corporativo com técnicas atualizadas",
-        image: "/cursos/ciberseguranca.jpg",
+        image: "/cyber-course.avif",
     },
 ];
 
@@ -86,7 +86,6 @@ export default function PopularCourses() {
     return (
         <section id="cursos" className="w-full py-20 md:py-28 px-4 md:px-6 bg-white" aria-labelledby="cursos-title">
             <div className="max-w-6xl mx-auto">
-                {/* Section Header */}
                 <div className="text-center mb-16 space-y-4">
                     <h2 id="cursos-title" className="text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
                         Cursos Populares
@@ -97,7 +96,6 @@ export default function PopularCourses() {
                     </p>
                 </div>
 
-                {/* Category Filter */}
                 <div
                     className="flex flex-wrap justify-center gap-3 mb-16"
                     role="group"
@@ -120,14 +118,12 @@ export default function PopularCourses() {
                     ))}
                 </div>
 
-                {/* Courses Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredCourses.map((course) => (
                         <article
                             key={course.id}
                             className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#7F05EA]"
                         >
-                            {/* Course Image */}
                             <div className="relative h-48 bg-gray-100 overflow-hidden">
                                 <Image
                                     src={course.image}
@@ -136,10 +132,9 @@ export default function PopularCourses() {
                                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
-                                {/* Gradient Overlay */}
+
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                                {/* Level Badge */}
                                 <div className="absolute top-4 left-4">
                                     <span
                                         className={`px-3 py-1.5 text-sm font-medium rounded-lg ${
@@ -155,9 +150,7 @@ export default function PopularCourses() {
                                 </div>
                             </div>
 
-                            {/* Course Content */}
                             <div className="p-6">
-                                {/* Course Header */}
                                 <div className="mb-4">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight group-hover:text-[#FF4589] transition-colors">
                                         {course.title}
@@ -179,7 +172,6 @@ export default function PopularCourses() {
                                     </div>
                                 </div>
 
-                                {/* Course Footer */}
                                 <div className="border-t border-gray-200 pt-6">
                                     <button
                                         className="w-full flex items-center justify-center gap-3 py-3 px-6 bg-gray-100 hover:bg-gradient-to-r hover:from-[#FF4589] hover:to-[#7F05EA] text-gray-700 hover:text-white rounded-xl transition-all duration-300 group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7F05EA]"
@@ -194,7 +186,6 @@ export default function PopularCourses() {
                     ))}
                 </div>
 
-                {/* No Results Message */}
                 {filteredCourses.length === 0 && (
                     <div className="text-center py-16">
                         <p className="text-xl text-gray-600">Nenhum curso encontrado nesta categoria. Tente outra!</p>

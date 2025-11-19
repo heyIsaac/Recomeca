@@ -9,9 +9,7 @@ export default function Footer() {
     return (
         <footer className="w-full bg-gray-50 border-t border-gray-200" role="contentinfo">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-                {/* Main Footer Content */}
                 <div className="grid md:grid-cols-4 gap-8 lg:gap-12 mb-8 lg:mb-12">
-                    {/* Brand Section */}
                     <div className="space-y-4 md:col-span-2 lg:col-span-1">
                         <div className="flex items-center gap-3 mb-4">
                             <Image
@@ -42,7 +40,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Links Sections */}
                     {[
                         {
                             title: "Navegação",
@@ -90,7 +87,6 @@ export default function Footer() {
                     ))}
                 </div>
 
-                {/* Contact Info */}
                 <div className="py-8 border-t border-gray-200 space-y-6">
                     <h3 className="text-lg font-semibold text-gray-900">Fale Conosco</h3>
                     <div className="grid md:grid-cols-3 gap-6">
@@ -112,7 +108,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
                 <div className="pt-8 border-t border-gray-200 flex flex-col lg:flex-row justify-between items-center gap-4">
                     <p className="text-gray-600 text-base text-center lg:text-left">
                         © 2025 ReComeçar 60+. Todos os direitos reservados.

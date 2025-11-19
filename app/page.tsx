@@ -1,5 +1,3 @@
-"use client";
-
 import Benefits from "./_components/Benefits";
 import ContactForm from "./_components/ContactForm";
 import FAQ from "./_components/FAQ";

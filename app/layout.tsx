@@ -7,7 +7,7 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 export const metadata: Metadata = {
-    title: "O Futuro do Trabalho | ReColocação Digital",
+    title: "ReColocação Digital",
     description:
         "Prepare-se para o futuro do trabalho. Cursos especializados, certificações reconhecidas e comunidade de profissionais em recolocação.",
 
