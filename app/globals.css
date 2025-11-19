@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--font-sans: "Afacad", "Geist", "Geist Fallback", sans-serif;
+	--font-mono: "Geist Mono", "Geist Mono Fallback";
+	--color-pink-primary: #ff4589;
+	--color-purple-primary: #7f05ea;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+	* {
+		@apply border-gray-200;
+	}
+
+	body {
+		@apply bg-white text-gray-900;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-gray-900 font-bold;
+	}
+
+	a {
+		@apply transition-colors duration-200;
+	}
+
+	/* Focus styles for keyboard navigation */
+	*:focus-visible {
+		@apply outline-2 outline-offset-2;
+		outline-color: #7f05ea;
+	}
+
+	/* Selection color */
+	::selection {
+		background-color: #ff4589;
+		color: white;
+	}
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+	.btn-primary {
+		@apply px-6 py-3 bg-[#FF4589] text-white font-semibold rounded-full hover:bg-[#E63F7C] active:scale-95 transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7F05EA];
+	}
+
+	.btn-secondary {
+		@apply px-6 py-3 border-2 border-[#7F05EA] text-[#7F05EA] font-semibold rounded-full hover:bg-[#7F05EA] hover:text-white transition-all duration-200 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7F05EA];
+	}
+
+	.section-title {
+		@apply text-3xl md:text-4xl font-bold text-gray-900 text-balance;
+	}
+
+	.section-subtitle {
+		@apply text-lg text-gray-600 text-balance leading-relaxed;
+	}
+
+	.card-benefit {
+		@apply p-6 bg-white border-l-4 border-[#FF4589] hover:shadow-lg transition-shadow duration-300;
+	}
+
+	.dot-indicator {
+		@apply w-3 h-3 rounded-full bg-[#FF4589];
+	}
+}
+
+/* Smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Remove default number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
 }

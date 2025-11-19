@@ -1,0 +1,64 @@
+{
+    "stories": [
+        {
+            "id": 1,
+            "name": "Ana Caroline",
+            "age": 62,
+            "location": "São Paulo, SP",
+            "quote": "Antes da Recomeça, eu me sentia esquecida — agora, cada tela que desenho lembra quem eu me tornei.",
+            "from": "RH",
+            "to": "UX Designer",
+            "photo": "/1.jpeg",
+            "stats": {
+                "projetos": 8,
+                "entrevistas": 6,
+                "ofertas": 2,
+                "meses": 6
+            },
+            "resultado": "Conseguiu seu primeiro emprego como UX Designer Júnior em uma healthtech local aos 60 anos.",
+            "desafios": "Dificuldade inicial com ferramentas digitais como Figma e Miro, além de insegurança por ser mais velha que os colegas.",
+            "cursos": ["Fundamentos de UX Design", "Design Thinking", "Figma Avançado", "Pesquisa com Usuários"],
+            "dica": "Aprenda a ouvir antes de tentar resolver. UX é sobre pessoas, idade nunca foi obstáculo para entender gente."
+        },
+        {
+            "id": 2,
+            "name": "Carlos Emanuel",
+            "age": 55,
+            "location": "Belo Horizonte, MG",
+            "quote": "Antes da Recomeça, eu achava que minha história tinha acabado — hoje, eu escrevo novas linhas todos os dias.",
+            "from": "Engenharia Civil",
+            "to": "Engenharia de Software",
+            "photo": "/2.jpeg",
+            "stats": {
+                "projetos": 8,
+                "entrevistas": 6,
+                "ofertas": 2,
+                "meses": 6
+            },
+            "resultado": "Após 6 meses, consegui meu primeiro cargo como Product Manager em uma empresa de SaaS. Minha experiência em processos me diferenciou dos candidatos mais jovens.",
+            "desafios": "Aprender a pensar como tech foi desafiador. Precisei reaprender como comunicar minhas ideias em um novo contexto.",
+            "cursos": ["Gestão de Produtos", "Agile e Scrum", "Análise de Dados para PM", "Liderança Ágil"],
+            "dica": "Sua experiência anterior é um superpoder. Combine com as novas habilidades e você se torna imbatível. Aproveite o networking da comunidade."
+        },
+        {
+            "id": 3,
+            "name": "Maria Silva",
+            "age": 52,
+            "location": "Rio de Janeiro, RJ",
+            "quote": "Antes da Recomeça, eu só era vista pelo que carregava — agora, sou reconhecida pelo que crio.",
+            "from": "Professora",
+            "to": "Desenvolvedora Front-end",
+            "photo": "/3.jpeg",
+            "stats": {
+                "projetos": 12,
+                "entrevistas": 8,
+                "ofertas": 3,
+                "meses": 8
+            },
+            "resultado": "Consegui minha primeira vaga como desenvolvedora front-end em uma startup de educação. Minha experiência como professora me ajudou a criar interfaces mais didáticas e acessíveis.",
+            "desafios": "Aprender programação do zero aos 52 anos foi um grande desafio. Mas a metodologia do ReComeçar tornou tudo mais simples e acessível.",
+            "cursos": ["HTML e CSS", "JavaScript Fundamentos", "React para Iniciantes", "Acessibilidade Web"],
+            "dica": "Não tenha medo de começar. A idade não é um limite, é uma vantagem. Você traz experiência de vida que os mais jovens ainda não têm."
+        }
+    ]
+}
